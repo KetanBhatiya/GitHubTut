@@ -30,5 +30,23 @@ Add and Commit :
 
 
 ------------------------------------------------------------------------------------------------
+
 push --> upload local repo content to remot repo
         git push origin main
+------------------------------------------------------------------------------------------------
+
+git init  --> While you creat new directory in your working directory at that time first to add 
+              .git file we initialize using this
+
+              git init
+
+ git remote add origin  <link>   --> to add remote  git
+
+ git remote -v       --> to varify remote
+
+ git branch          --> to check branch
+
+ git branch -M main  --> to rename branch
+
+ git push -u origin main  --> Now we push the repo ( To write every time origin main is hard for this we write "-u" and after this we only write git push )
+ 
