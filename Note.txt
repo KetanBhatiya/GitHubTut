@@ -1,0 +1,29 @@
+
+Basic command:
+ cd <dir_name> --> Change directory
+ ls            --> List all the files in the directory
+ ls -a         --> list all the Hidden files in the directory
+
+
+Ch-1 : 
+
+Connecting Git repositories to the Code Editor
+  git clone <repository url> 
+
+Github repository modifications status
+
+    git status                   // List all the files that has been modified but not committed
+
+    Message that can appear while checking status of repository
+    1).Untracked --> New files that git does't yet track
+    2).Modified --> changed files
+    3).Staged -->file is ready to be committed
+    4).Unmounted -->unchanged files
+
+Add and Commit :
+    add     --> adds new or changed files in your working directory to the git staging area
+           git add <file_name1> <file_name2>      :- Used to add files separated 
+           git add .                              :- Used to add all the files once
+
+    commit  --> it is the record of changes
+            git commit -m "some message"  
