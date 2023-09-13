@@ -4,11 +4,11 @@ Basic command:
  ls            --> List all the files in the directory
  ls -a         --> list all the Hidden files in the directory
 
-
-Ch-1 : 
+-----------------------------------------------------------------------------------------------
 
 Connecting Git repositories to the Code Editor
   git clone <repository url> 
+-----------------------------------------------------------------------------------------------
 
 Github repository modifications status
 
@@ -19,7 +19,7 @@ Github repository modifications status
     2).Modified --> changed files
     3).Staged -->file is ready to be committed
     4).Unmounted -->unchanged files
-
+-----------------------------------------------------------------------------------------------
 Add and Commit :
     add     --> adds new or changed files in your working directory to the git staging area
            git add <file_name1> <file_name2>      :- Used to add files separated 
@@ -27,3 +27,8 @@ Add and Commit :
 
     commit  --> it is the record of changes
             git commit -m "some message"  
+
+
+------------------------------------------------------------------------------------------------
+push --> upload local repo content to remot repo
+        git push origin main
