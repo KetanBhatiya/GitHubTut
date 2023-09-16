@@ -50,3 +50,64 @@ git init  --> While you creat new directory in your working directory at that ti
 
  git push -u origin main  --> Now we push the repo ( To write every time origin main is hard for this we write "-u" and after this we only write git push )
  
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Branch Related Changes:-
+
+To create a new brach 
+      git checkout -b <branch name>
+This will switched to created new branch
+
+  Now again if we want to go to the previous branch 
+      git checkout <branch_name>
+
+To delete a brach
+  1)first you need to switched anyother branch before delete branch
+  2)from any other branch you can delete the branch
+  3)you can not delete the branch if you are on same brach that you want to delete
+
+    git branch -d <branch_name>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Merging Code:
+
+To compare commits, branches, file & more
+    git diff <branch_name>
+
+To merge 2 brach      (we will not using this things)
+    git merge<branch_name> 
+
+instead of we are using pull request through github gui...
+
+---------------------------------------
+Pull command: 
+    used to fetch and download content from a remote repo and immediately update the local repo to match that content...
+
+      git pull origin main
+
+------------------------------------------
+Resolving merge conflicts
+
+  (here we using commandline to merge a branch)
+      git merge <branch_name>
+  
+  for example if we changed the main branch and Feature1 brach with 1 word difference
+  than it will cause conflicts.
+
+--------------------------------------------
+
+git log            --> Command will give all the commits hash code and msg...
+
+Undoing Changes:
+
+Case1: Staged changes (add . but note commit)
+      git reset <file_name>
+      git reset
+
+Case2: Commited chages(for one commit) (add . / Commit but not push)
+      git reset HEAD~1
+
+Case3: Commited changes (for many commits)
+      git reset <commit hase>
+      git reset --hard <commit hase>
